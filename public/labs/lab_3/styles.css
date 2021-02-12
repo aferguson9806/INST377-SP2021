@@ -1,2 +1,48 @@
 /* Add some css styles based on the tutorial at javascript.info: introduction to browser events
  https://javascript.info/introduction-browser-events */
+
+.imagesblock {
+    background: rgb(137, 156, 175);
+    padding: 80px;
+    margin: 300px;
+    position: relative;
+}
+
+.slides {
+    padding: 0;
+    margin: auto;
+    list-style: none;
+    text-align: center;
+}
+
+.image {
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: inline;
+}
+
+.arrowleft {
+    display: inline;
+}
+
+.arrowright {
+    display: inline;
+}
+
+.buttonimage {
+    height: 10px;
+    width: 10px;
+}
+
+.slot {
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+    background:midnightblue;
+    display: inline-block;
+}
+
+.arrow {
+    display: inline-block;
+}
