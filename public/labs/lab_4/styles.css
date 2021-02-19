@@ -1,3 +1,20 @@
+body {
+    background-color:lightsalmon;
+    font: normal 18px/1.5 "Fira Sans", "Helvatica Neue", sans-serif;
+    color: #f2f2f2;
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container * {
+    box-sizing: border-box;
+}
+
 .flex-outer li,
 .flex-inner {
     display:flex;
@@ -14,4 +31,23 @@
 .flex-outer > li > label + *,
 .flex-inner {
     flex: 1 0 220px;
+}
+
+.flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: #333;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+}
+
+.flex-inner li {
+    width: 100px;
+}
+
+.flex-inner {
+    justify-content: space-between;
 }
