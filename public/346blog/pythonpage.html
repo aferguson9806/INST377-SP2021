@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Features and Stengths</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blog-header">
+        <h1>Andrew Ferguson's INST346 Blog Post</h1>
+        <h3>Homework #01</h3>
+        <h3>2/25/21</h3>
+    </div>
+
+    <ul class="menu">
+        <li class="menu-item"><a href="index.html">Home Page</a></li >
+        <li id="active" class="menu-item"><a href="pythonpage.html">Python</a></li >
+        <li class="menu-item"><a href="jspage.html">JavaScript</a></li >
+        <li class="menu-item"><a href="comparedpage.html">Compared in Interface Development</a></li >
+        <li class="menu-item"><a href="takeawayspage.html">Takeaways</a></li >
+    </ul>
+
+    <h2>Python: Features, and Strengths</h2>
+    <p>Python is likely a programming language that many UMD InfoSci students are familiar with, as this is the language taught in both the introductory programming class (INST126) and the object oriented programming class (INST326) in the iSchool</p>
+    <p>One of the key features of Python is its code block syntax, which throws off lots of programmers who are used to other languages. Python uses indentation, or "whitespace" to specify code that belongs to a block. Python is very strict about whitespace as if something is on the wrong indentation level, the Python interpreter will read your code the wrong way and you won't get the result you expect.</p>
+    <p>This form of whitespace specification is also known as "implicit" code block syntax, as there isn't a specific character or keyword used to specify a block of code.</p>
+
+    <hr>
+
+    <p>In terms of graphic user interface design, python generally relies on a library known as tkinter to build GUIs.</p>
+    <p>Pictured below is a project I worked on that uses a tkinter GUI to display data gethered from an API known as <a href="https://www.thecolorapi.com/">The Color API</a>. The user enters either a hex value or 3 RGB values and the program outputs a page with two colored boxes, one box is the color of the value you entered, and the other box is the complementary color to the color you entered.</p>
+
+    <div class="images">
+        <img src="images/colorGUI.png" alt="My color picker GUI project">
+        <img src="images/colorGUIoutput.png" alt="Output of color GUI project">
+    </div>
+
+    <p>Although I am proud of this project, this took me about a week of effort, and the tkinter frame is still very rudimentary, it almost looks like an early Windows program from the 90s.</p>
+    <hr>
+    <p>In my opinion, this is not where Python thrives. Python is very strong when it comes to data science. Similar to tkinter, Python has a library called Pandas which is famous for its ability to create "dataframes" Dataframes are like excel spreadsheets in that there are columns and rows and each cell has a significance in terms of the data.</p>
+    <p>Pandas is very useful when analyzing large datasets. It is very easy to turn a csv file or an excel file into a pandas dataframe and do work on it in Python. It is also very easy to take a Python data structure like a list of lists or a dictionary and turn it into a pandas dataframe.</p>
+    <p>Pictured below is an example of work that I did in pandas and a Python environment known as Jupyter Notebook to analyze a large dataset about the 116th Congress for my INST314 Final Project. The first picture shows a basic logical system to count how many representatives have offices in each Congressional office building. the second image is what a dataframe looks like when displayed visually in Jupyter Notebooks.</p>
+
+    <div class="images">
+        <img class="pandasimg" src="images/pandasBuilding.png" alt="My pandas output showing how many reps are in each congress office building">
+        <img class="pandasimg" src="images/pandasDF.png" alt="Output of congress dataframe">
+    </div>
+
+
+</body>
+</html>

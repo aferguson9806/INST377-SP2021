@@ -1,7 +1,7 @@
 body {
     background-color:skyblue;
     font: normal 18px/1.5 "Fira Sans", "Helvatica Neue", sans-serif;
-    color:#f2f2f2;
+    color: #333;
     padding-left: 50px;
 }
 
@@ -12,6 +12,7 @@ body {
     padding: 0;
     margin-top: 15px;
     overflow: hidden;
+    margin-right: 50px;
 }
 
 .menu-item {
@@ -50,13 +51,6 @@ a {
     color: purple;
 }
 
-hr{
-    height: 12px;
-    border: 0;
-    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
-    position: absolute;
-}
-
 .js {
     width: 175px;
     height: 175px;
@@ -77,6 +71,11 @@ hr{
 
 p {
     max-width: 80%;
+}
+
+.pandasimg {
+    height: 400px;
+    width: 400px;
 }
 
 
