@@ -1,0 +1,53 @@
+body {
+    background-color:skyblue;
+    font: normal 18px/1.5 "Fira Sans", "Helvatica Neue", sans-serif;
+    color:#f2f2f2;
+    padding-left: 50px;
+}
+
+h1 {
+    padding-top: 25px;
+    border: 0px;
+    margin: 0px;
+}
+
+h3 {
+    border: 0px;
+    margin: 0px;
+}
+
+a {
+    color: purple;
+}
+
+.line {
+    margin: 0;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.js {
+    width: 175px;
+    height: 175px;
+}
+
+.python {
+    width: 200px;
+    height: 200px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 40px;
+}
+
+.left, .right{
+    display: flex;
+    align-items: center;
+}
+
+
+
