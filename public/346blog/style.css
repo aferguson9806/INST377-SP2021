@@ -78,6 +78,30 @@ p {
     width: 400px;
 }
 
+.pros {
+    display: inline-block;
+    max-width: 40%;
+    padding-right:50px;
+}
+
+.cons {
+    display: inline-block;
+    max-width: 40%;
+}
+
+#refTitle {
+    text-align: center;
+}
+
+.referencesList {
+    list-style-type: none;
+}
+
+.refitem {
+    text-align: center;
+    padding-top: 20px;
+}
+
 
 
 
