@@ -1,0 +1,66 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css";
+
+@import "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css";
+
+
+.page {
+    display: flex;
+}
+
+#mapid { 
+    height: 360px;
+    width: 360px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+h1 {
+    margin-left: 30px;
+}
+
+.box {
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 100px;
+    width: 65%;
+    background-color: rgb(6, 57, 92);
+}
+
+.restaurants {
+    background-image: linear-gradient(to bottom right, pink, red);
+    max-width: 50%;
+    margin-left: 40px;
+    margin: 30px;
+}
+
+body {
+    background-color: plum;
+}
+
+h4, h2 {
+    margin: 5px;
+    font-family: "Shippori Mincho", serif;
+}
+
+h4 {
+    font-weight: lighter;
+}
+
+li {
+    list-style: none;
+    padding-left: 30px;
+}
+
+input {
+    width: 50%;
+}
+
+ul {
+    padding-left: 0px;
+    min-width: 50%;
+}
+
+address {
+    font-family: "Shippori Mincho", serif;
+    margin: 5px;
+}
