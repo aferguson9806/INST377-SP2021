@@ -39,20 +39,70 @@ async function dataHandler(mapObjectFromFunction) {
 
   const request = await fetch("/api");
   const data = await request.json();
-  const myPageData = document.querySelector("#content");
+  const myPageData = document.querySelector(".content");
 
-  search.addEventListener("submit", async (event) => {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
     console.log("submit fired");
+    console.log(search.value);
 
-    const display = data.filter((record) => {
-      record.city.toUpperCase().includes(search.value.toUpperCase());
+    const display = data.filter((record) => search.value === record.zip);
+    console.log(display);
+
+    const restaurants = display.slice(0, 5);
+
+    restaurants.forEach((restaurant) => {
+      let newLi = document.createElement("li");
+      let newDiv = document.createElement("div");
+
+      newLi.classList.add("liElement")
+
+      newDiv.classList.add("restaurants");
+
+      let resDataName = document.createElement("h2");
+      let resDataAdd = document.createElement("address");
+      let resDataCata = document.createElement("h4");
+      let cityHeader = document.createElement("h4");
+
+      let divResName = document.createTextNode(titleCase(restaurant.name));
+      let divResAdd = document.createTextNode(restaurant.address_line_1);
+      let divResCata = document.createTextNode(titleCase(restaurant.category));
+      let cityHeaderContent = document.createTextNode(
+        titleCase(restaurant.city)
+      );
+
+      resDataName.appendChild(divResName);
+      resDataAdd.appendChild(divResAdd);
+      resDataCata.appendChild(divResCata);
+      cityHeader.appendChild(cityHeaderContent);
+
+      newDiv.appendChild(resDataName);
+      newDiv.appendChild(resDataCata);
+      newDiv.appendChild(resDataAdd);
+      newDiv.appendChild(cityHeader);
+
+      newLi.appendChild(newDiv);
+
+      myPageData.appendChild(newLi);
+
+      L.marker(restaurant.geocoded_column_1.coordinates.reverse()).addTo(
+        mapObjectFromFunction
+      );
     });
+  });
+
+  form.addEventListener("input", async (event) => {
+    if (search.value === "") {
+      while (myPageData.hasChildNodes()) {
+        myPageData.removeChild(myPageData.lastChild);
+      }
+
+    }
   });
 }
 
 async function windowActions() {
-  const map = mapInit();
+  let map = mapInit();
   await dataHandler(map);
 }
 
